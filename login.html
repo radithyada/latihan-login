@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Aplikasi Curi Jodoh Orang Lain</title>
+		<style type="text/css">
+			body{
+			margin:0;
+			}
+			.bagian-kiri{
+				position: absolute;
+				width: 50%;
+				height: 100%;
+			}
+			.bagian-kanan{
+				position: absolute;
+				width: 46.5%;
+				left: 50%;
+				padding: 30px;
+				height:92.8%;
+			}
+			#lovahub {
+				font-color: white;
+				margin-top: 350px;
+				padding-left: 100px;
+				font-size: 75px;
+				line-height: 0px;
+			}
+			#katakata {
+				padding-left: 100px;
+				font-size: 25px;
+				font-family: arial;
+
+			}
+			.login {
+				margin-top: 150px;
+				font-size: 40px;
+				line-height: 20px;
+			}
+			#username {
+				width: 55%;
+				padding: 10px;
+				font-size: 20px;
+				border-radius: 15px;
+			}
+			#password {
+				width: 55%;
+				padding: 10px;
+				font-size: 20px;
+				border-radius: 15px;
+				margin-top: 18px;
+			}
+			#button-login {
+				width: 58.2%;
+				padding: 10px;
+				font-size: 20px;
+				border-radius: 15px;
+				margin-top: 40px;
+				background: rgb(129,0,231);
+				background: linear-gradient(160deg, rgba(129,0,231,1) 0%, rgba(129,0,231,1) 100%);
+				border-color: rgba(0,0,0,0);
+				color: white;
+				transition: 1s;
+			}
+			#button-login:hover{
+				background: white;
+				color: rgb(129,0,231);
+			}
+			p {
+				font-family: arial;
+				font-size: 23px;
+			}
+			h1 {
+				font-family: arial;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="bagian-kiri">
+		<h1 id="lovahub">LOVAHUB</h1>
+		<p id="katakata">Cari Jodoh Idamanmu dengan merebut pacar orang</p>
+		</div>
+		<div class="bagian-kanan">
+
+			<h1 class="login">LOGIN</h1>
+			<p>Belum Punya Akun?.
+				<a href="https://www.instagram.com/?hl=id">DAFTAR SEKARANG</a>
+			</p>
+			<input type="text" name="username" id="username" placeholder="Masukan username" > <br>
+			<input type="password" name="password" id="password" placeholder="Masukan password"> <br>
+			<button id="button-login" onclick="login()"> LOGIN </button>
+		</div>
+		<script>
+			function login(){
+				var username = document.getElementById('username').value;
+			    var password = document.getElementById('password').value;
+
+			    console.log(username)
+			    console.log(password)
+
+			if( username === "" || password === ""){
+				alert( 'username atau password tidak boleh kosong')
+			 }else{
+			 	alert('Berhasil')
+			 }
+			}
+		</script>
+	</body>
+</html>
